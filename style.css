@@ -1,0 +1,22 @@
+/* it is for all sections */
+/* box-sizing Specifies the behavior of the 'width' and 'height' properties. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* our display is flex and our iterms are aligned to center */
+/*  image covering all the webpage with no repeat and fixed and  */
+body {
+    display: flex;
+    font-family: sans-serif;
+    background-image: url('japanese.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    
+}
+
