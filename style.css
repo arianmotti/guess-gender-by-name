@@ -78,7 +78,8 @@ image covering all the webpage with no repeat and fixed and  */
  .button {
      margin-left: 50%;
      transform: translateX(-50%);
-     margin-bottom: 5%;
+     margin-bottom: 5px;
+     margin-top: 5px;
      width: 100px;
      height: 30px;
      border: none;
