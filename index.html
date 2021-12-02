@@ -1,24 +1,45 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="gender" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Gender Detector</title>
-    </head>
-
-    <body>
-        <div class="content">
-            <div class="container">
-
-            </div>
-            <div class="container">
-                
-            </div>
-
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="gender" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gender Detector</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <form id="main-form">
+                <h1>Mr. or Ms. ?</h1>
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" class="form" id="name" name="name" maxlength="255" required />
+                </div>
+                <div class="radio-style">
+                    <label for="genderChoice1"><input type="radio" id="genderChoice1" name="gender" value="male" />
+                        Male</label>
+                    <label for="genderChoice2"><input type="radio" id="genderChoice2" name="gender" value="female">
+                        Female</label>
+                </div>
+                <button type="submit" class="button" id="submit-button">Submit</button>
+                <button type="submit" class="button" style="margin-top: 5px;" id="save-button">Save</button>
+                <p id="alert" style="display: flex;justify-content: center;color:rgb(206, 32, 9);"></p>
+            </form>
         </div>
+        <div class="container">
+            <div class="right">
+                <div class="right">
+                    <h1>Prediction</h1>
+                    <p id="gender-status" style="display: flex;justify-content: center;"></p>
+                    <p id="gender-percentage" style="display: flex;justify-content: center;"></p>
+                </div>
+                <div class="right" style="border-style: dotted;border-width: 2px;padding: 5px;">
+                    <h1>Saved Answer</h1>
+                    <p id="gender-status-saved" style="display: flex;justify-content: center;"></p>
+                    <button type="submit" class="button" id="clear-button">Clear</button>
+                </div>
+            </div>
+        </div>
+</body>
 
-            
-
-    </body>
 </html>
