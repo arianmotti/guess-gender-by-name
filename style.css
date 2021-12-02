@@ -43,6 +43,7 @@ image covering all the webpage with no repeat and fixed and  */
      display: flex;
      align-items: center;
      justify-content: center;
+     /* margin-top: 0px; */
  }
  /*left container must have block display */
  
@@ -55,12 +56,21 @@ image covering all the webpage with no repeat and fixed and  */
  .right {
      display: block;
      margin: 5px;
+     margin-top: 0px;
+     /* justify-content: space-evenly; */
+ }
+ 
+ .prediction {
+     margin-bottom: 100px;
+     flex: 1;
+     overflow: auto;
  }
  
  .right-box {
      border-style: dotted;
      border-width: 1px;
-     padding: 5px;
+     padding: 0px;
+     margin-top: 0px;
  }
  /* modify text input style */
  
