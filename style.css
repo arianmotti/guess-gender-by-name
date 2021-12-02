@@ -82,6 +82,12 @@ image covering all the webpage with no repeat and fixed and  */
      margin: 10px;
      display: inline-block;
  }
+ 
+ .alert {
+     display: flex;
+     justify-content: center;
+     color: rgb(206, 32, 9);
+ }
  /*lable must have block display */
  
  label {

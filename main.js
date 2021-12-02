@@ -26,6 +26,7 @@ document.getElementById('submit').onclick = function(e) {
                 if (respData['gender']) {
                     gender_status.innerText = respData['gender'];
                     gender_percentage.innerText = respData['probability'];
+                    print_alert('');
                 } else {
                     print_alert("There is no guess for " + respData['name'])
                 }
@@ -63,13 +64,15 @@ document.getElementById('save').onclick = function(e) {
         if (items['gender']) {
             localStorage.setItem(items['name'], items['gender']);
             saved_gender.innerText = items['gender'];
+            print_alert('');
         } else {
             var gender_requested = gender_status.innerText;
             saved_gender.innerText = gender_requested;
             localStorage.setItem(items['name'], gender_requested);
+            print_alert('');
             if (gender_requested.length == 0) {
                 print_alert(
-                    'You did not choose a gender and you did not search any name!'
+                    'You did not choose a gender and you did not search any name either!'
                 );
             }
         }
@@ -90,10 +93,12 @@ document.getElementById('clear').onclick = function(e) {
             localStorage.removeItem(name);
             saved_gender.innerText = '';
             print_status('successfully deleted : ' + name);
+            print_alert('');
         } else {
             print_alert(
                 "The gender of this name is not saved in the storage!"
             );
+
         }
     } else {
         print_alert('no name is entered!');
