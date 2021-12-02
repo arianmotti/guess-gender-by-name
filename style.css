@@ -44,6 +44,11 @@ image covering all the webpage with no repeat and fixed and  */
      align-items: center;
      justify-content: center;
  }
+ 
+ .left {
+     display: block;
+     margin: 5px;
+ }
  /*right container must have block display */
  
  .right {
@@ -66,6 +71,7 @@ image covering all the webpage with no repeat and fixed and  */
  .button {
      margin-left: 50%;
      transform: translateX(-50%);
+     margin-bottom: 5%;
      width: 100px;
      height: 30px;
      border: none;
