@@ -44,6 +44,7 @@ image covering all the webpage with no repeat and fixed and  */
      align-items: center;
      justify-content: center;
  }
+ /*left container must have block display */
  
  .left {
      display: block;
@@ -54,6 +55,12 @@ image covering all the webpage with no repeat and fixed and  */
  .right {
      display: block;
      margin: 5px;
+ }
+ 
+ .right-box {
+     border-style: dotted;
+     border-width: 1px;
+     padding: 5px;
  }
  /* modify text input style */
  
@@ -93,6 +100,12 @@ image covering all the webpage with no repeat and fixed and  */
      display: flex;
      justify-content: center;
      color: rgb(206, 32, 9);
+ }
+ 
+ .texts {
+     display: flex;
+     justify-content: center;
+     text-align: center;
  }
  /*lable must have block display */
  
