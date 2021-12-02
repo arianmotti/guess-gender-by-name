@@ -59,12 +59,14 @@ image covering all the webpage with no repeat and fixed and  */
      margin-top: 0px;
      /* justify-content: space-evenly; */
  }
+ /*prediction section where we have percent and gender */
  
  .prediction {
      margin-bottom: 100px;
      flex: 1;
      overflow: auto;
  }
+ /*the box wich contains saved gender and remove button */
  
  .right-box {
      border-style: dotted;
@@ -106,12 +108,14 @@ image covering all the webpage with no repeat and fixed and  */
      margin: 10px;
      display: inline-block;
  }
+ /* alert style added*/
  
  .alert {
      display: flex;
      justify-content: center;
      color: rgb(206, 32, 9);
  }
+ /*styles of the texts return when submit button clicked*/
  
  .texts {
      display: flex;
